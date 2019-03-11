@@ -1,17 +1,37 @@
 import React from 'react'
+import Title from '../Title'
+import Instruction from '../Instruction'
+import Score from '../Score'
+
+const navStyle = {
+    backgroundColor: "dodgerblue",
+    color: "white",
+    height: "75px",
+    width: "100%",
+    position: "fixed",
+    paddingTop: "25px",
+    boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5)"
+
+
+}
 function Navbar(props) {
 	return (
-            <nav className="blue">
-                <div className="nav-wrapper">
-                <div className="container">
-                    <ul id="nav-mobile" class="right hide-on-med-and-down">
-                        <li><a href="sass.html">Dodger Memory Game</a></li>
-                        <li><a href="badges.html"> Click to Begin </a></li>
-                        <li><a href="collapsible.html">JavaScript</a></li>
-                    </ul>
-                </div>
-                </div>
-            </nav> 
+        <div>
+        <ul class="nav nav-pills nav-fill" style={navStyle}> 
+
+            <li class="nav-item"> 
+                <Title/>
+            </li> 
+
+            <li class="nav-item"> 
+                <Instruction instruction={props.instruction}/>
+            </li> 
+
+            <li class="nav-item"> 
+                <Score current={props.current} high={props.high}/>
+            </li> 
+        </ul>
+        </div>
 	)
 }
 

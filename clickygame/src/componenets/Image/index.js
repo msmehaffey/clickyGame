@@ -12,7 +12,10 @@ function Image(props) {
 					margin: 10, 
 					border: "5px solid dodgerblue"
 				}
-			}>
+			}
+			// onMouseOver={() => props.handleHover(props.id)}
+			onClick={() => props.onClick(props.id)}
+			>
 		</img> 
 	)
 }
