@@ -12,3 +12,64 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+#footerStyle {
+  background-Color: dodgerblue;
+  height: 60px;
+  color: white;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  padding-top: 20px;
+}
+
+#navigationBar {
+  background-color: dodgerblue;
+  color: white;
+  height: 75px;
+  width: 100%;
+  position: fixed;
+  padding-top: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5)
+}
+
+#jumbotronStyle {
+  margin-bottom: 10px;
+  padding-top: 200px;
+  background-image: url('https://securea.mlb.com/assets/images/2/2/2/299969222/cuts/2568x1445/cut.JPG');
+  background-position: 0% 60%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  text-shadow: black 0.3em 0.3em 0.3em;
+  text-align: center
+}
+
+#jumbotronStyle h2 {
+  visibility: hidden
+
+}
+
+  @media (max-width: 980px) {
+
+
+    #title {
+      display: none;
+    }
+
+    #instruction {
+      display: none;
+    }
+
+    #score {
+      float: center
+    }
+
+    #jumbotronStyle h2 {
+      visibility: visible
+    
+    }
+
+    
+    
+  }

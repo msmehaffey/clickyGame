@@ -52,8 +52,8 @@ class App extends Component {
     return (
       <div>
       <Navbar current={this.state.score} high={this.state.highscore} instruction={this.state.instruction}/>
-      <Jumbo/>
-        <div className="container" style={{textAlign: "center", paddingBottom: 40}}>
+      <Jumbo instruction={this.state.instruction}/>
+        <div className="container" style={{textAlign: "center", paddingBottom: 40, marginBottom: 40}}>
           {this.state.pictures.map(
             (image) => <Image
                               id={image.id}
